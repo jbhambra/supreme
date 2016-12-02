@@ -1,0 +1,62 @@
+.bluish {
+  background-color: blue;
+}
+
+.ScoreSheet {
+  display: flex;
+}
+
+.ScoreSheet-Frame {
+  display: inline-block;
+  flex-grow: 1;
+  border-left: 1px solid #a0a0a0;
+  text-align: center;
+}
+
+.ScoreSheet-Frame--current {
+  background-color: #e0e0e0;
+}
+
+.ScoreSheet-Frame:last-child {
+  display: inline-block;
+  flex-grow: 1;
+  border-right: 1px solid #a0a0a0;
+}
+
+.ScoreSheet-Frame:last-child .ScoreSheet-Roll:first-child {
+  border-right: 1px solid #a0a0a0;
+}
+
+.ScoreSheet-Rolls {
+  display: flex;
+}
+
+.ScoreSheet-Roll {
+  flex-grow: 1;
+  border-bottom: 1px solid #a0a0a0;
+  padding: 0px;
+}
+
+.ScoreSheet-Roll:last-child {
+  border-left: 1px solid #a0a0a0;
+}
+
+.ScoreSheet-Title {
+  background-color: #000;
+  color: #fff;
+  border-top: 1px solid #a0a0a0;
+  border-bottom: 1px solid #a0a0a0;
+  padding: 5px 0px;
+}
+
+.ScoreSheet-Roll--current {
+  background-color: #800;
+  border-top: #800;
+  color: #fff;
+}
+
+.ScoreSheet-Score {
+  border-bottom: 1px solid #a0a0a0;
+  padding: 0px 0px;
+}
+

@@ -1,0 +1,2 @@
+DELETE FROM GREETINGS;
+INSERT INTO GREETINGS( id, text ) VALUES( '1', 'hello, world' );

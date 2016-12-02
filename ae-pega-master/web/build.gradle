@@ -1,0 +1,28 @@
+group 'com.example'
+version '0.1.0'
+
+apply plugin: 'java'
+apply plugin: 'war'
+apply from: 'https://raw.github.com/akhikhl/gretty/master/pluginScripts/gretty.plugin'
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  compile 'com.google.code.gson:gson:2.7'
+  compile 'org.slf4j:slf4j-simple:1.7.21'
+  compile 'org.dalesbred:dalesbred:1.2.2'
+  compile 'com.h2database:h2:1.4.193'
+  compile 'javax.servlet:javax.servlet-api:3.1.0'
+
+  testCompile 'junit:junit:4.12'
+  testCompile 'org.mockito:mockito-all:1.10.19'
+  testCompile 'info.cukes:cucumber-java:1.2.4'
+  testCompile 'info.cukes:cucumber-junit:1.2.4'
+}
+
+gretty {
+  contextPath = '/'
+}
+
